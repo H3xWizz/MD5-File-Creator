@@ -25,7 +25,7 @@ def create_md5():
 
 print("Making MD5 for " + fname + "...")
 
-for fname in glob.iglob(os.getcwd() + "/**/*" + fname, recursive = True):
+for fname in glob.iglob(os.getcwd() + "/**/*" + fname):
     fnumber = fnumber + 1
     get_md5()
     create_md5()
